@@ -16,3 +16,8 @@
     "emmet.syntaxProfiles": {
         "javascript": "html"
      }
+
+      "files.associations": {
+        "*.ejs": "html",
+        "*.js": "html"
+    },

@@ -2,7 +2,11 @@
   "name": "react-webpack",
   "version": "1.0.0",
   "description": "learn webpack",
-  "scripts": {},
+  "scripts": {
+    "start": "webpack --config webpack.config.js",
+    "asset": "webpack --config webpack.config.asset.js",
+    "build": "webpack"
+  },
   "keywords": [
     "react",
     "webpack"
@@ -13,6 +17,8 @@
     "lodash": "^4.17.4"
   },
   "devDependencies": {
+    "css-loader": "^0.28.4",
+    "style-loader": "^0.18.2",
     "webpack": "^3.0.0"
   }
 }

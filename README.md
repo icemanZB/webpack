@@ -20,3 +20,13 @@ package.json <br>
     "build": "webpack"
 }
 ```
+7. 加载 CSS，为了从 JavaScript 模块中 import 一个 CSS 文件，需要在 module 配置中安装并添加 **style-loader** 和 **css-loade** <br>
+&nbsp;`npm install --save-dev style-loader css-loader` <br>
+> * 会在 html 中加入之前在 JavaScript 模块中 import 一个 CSS 文件 <br>
+```
+<style type="text/css">
+.hello{
+    color: red;
+}
+</style>
+```
