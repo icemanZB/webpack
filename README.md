@@ -23,6 +23,7 @@ package.json <br>
 7. 加载 CSS，为了从 JavaScript 模块中 import 一个 CSS 文件，需要在 module 配置中安装并添加 **style-loader** 和 **css-loade** <br>
 &nbsp;`npm install --save-dev style-loader css-loader` <br>
 > * 会在 html 中加入之前在 JavaScript 模块中 import 一个 CSS 文件 <br>
+> * 有的 loader 可以支持任何你可以想到的 CSS 处理器风格 - postcss, sass 和 less 等 <br>
 ```
 <style type="text/css">
 .hello{
@@ -30,3 +31,7 @@ package.json <br>
 }
 </style>
 ```
+8. `npm install --save-dev file-loader` 图像处理 <br>
+> * 当 import MyImage from './my-image.png'，该图像将被处理并添加到 output 目录，并且 MyImage 变量将包含该图像在处理后的最终 url。 <br>
+> * 当使用 css-loader 时，CSS 中的 url('./my-image.png') 会使用类似的过程去处理。 <br>
+> * loader 会识别这是一个本地文件，并将 './my-image.png' 路径，替换为输出目录中图像的最终路径。html-loader 以相同的方式处理 `<img src="./my-image.png" />`。 <br>
