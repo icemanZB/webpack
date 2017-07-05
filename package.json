@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "learn webpack",
   "scripts": {
-    "start": "webpack --config webpack.config.js",
+    "start": "webpack --config webpack.config.start.js",
     "asset": "webpack --config webpack.config.asset.js",
     "build": "webpack"
   },
